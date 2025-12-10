@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.top-bar {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 350px;
+    height: 12px;
+    background: linear-gradient(to right, #f5a623 40%, #ccc 40%);
+}
+
+.top-h1 {
+    font-size: 30px;
+    position: absolute;
+    z-index: 999;
+    margin-left: -280px;
+    margin-top: -12px;
+    font-weight: 300;
+    color:  #162350;
+}
+
+.top-logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: -340px;
+    margin-top: -20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.select-box select {
+    width: 100%;
+    padding: 14px;
+    border: thin solid black;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.small-text {
+    font-size: 13px;
+    margin: 6px 0 18px 0;
+    display: flex;
+}
+
+.small-text a {
+    text-decoration: none;
+    color: #4a4aff;
+}
+
+.option-card {
+    border: thin solid black;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.option-card:hover {
+    border-color: orange;
+}
+
+.icon-area {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.icon-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text-area {
+    flex: 1;
+}
+
+.option-title {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.option-desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 4px;
+}
+
+.option-card input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.main-btn {
+    width: 100%;
+    padding: 14px;
+    background: #f5a623;
+    border: thin solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 260px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.login-text a {
+    text-decoration: none;
+    color: #4a4aff;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .top-bar {
+        width: 70%;
+        margin-left: 200px;
+    }
+    
+    .top-h1 {
+        margin-left: -180px;
+    }
+    
+    .top-logo img {
+        margin-left: -240px;
+    }
+    
+    .main-btn {
+        margin-left: 150px;
+        width: calc(100% - 150px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        width: 80%;
+        margin: 20px auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .top-h1 {
+        position: relative;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .top-logo {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .top-logo img {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .container {
+        width: 95%;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .main-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .top-bar {
+        width: 90%;
+        height: 10px;
+        margin: 15px auto;
+    }
+    
+    .top-h1 {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    
+    .top-logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .container {
+        margin: 20px auto;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .title {
+        font-size: 22px;
+    }
+    
+    .subtitle {
+        font-size: 13px;
+    }
+    
+    .option-card {
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .icon-area {
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .text-area {
+        width: 100%;
+    }
+    
+    .option-title {
+        font-size: 15px;
+    }
+    
+    .option-desc {
+        font-size: 13px;
+    }
+    
+    .select-box select {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .main-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    .login-text {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .top-h1 {
+        font-size: 18px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .option-card {
+        padding: 10px;
+    }
+    
+    .icon-area {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .container {
+        margin: 20px auto;
+    }
+    
+    .top-bar {
+        margin-top: 15px;
+    }
+    
+    .option-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Create Account</title>
+</head>
+<body>
+
+    <header class="top-bar">
+        <h1 class="top-h1">flutterwave</h1>
+        <div class="top-logo">
+            <img src="./images/flutterwaves.png" alt="logo">
+        </div>
+    </header>
+
+    <div class="container">
+
+        <h1 class="title">What type of account would you like to create?</h1>
+        <p class="subtitle">Choose the option that fits your organization.</p>
+
+        <label class="label">Country</label>
+
+        <div class="select-box">
+            <select>
+                <option>Nigeria</option>
+                <option>USA</option><option value=""></option>
+                <option>South Africa</option>
+                <option>India</option>
+                <option>Tourkey</option>
+                <option>Spain</option>
+                <option>Ghana</option>
+                <option>Zimbabwe</option>
+            </select>
+        </div>
+
+        <p class="small-text">Can't find your country? <a href="./help.html">click here.</a></p>
+
+        <p class="label">I'm creating an account for:</p>
+
+        
+        <label class="option-card">
+            <div class="icon-area">
+                <img src="./images/Business acct.svg" alt="icon">
+            </div>
+
+            <div class="text-area">
+                <span class="option-title">Business account</span>
+                <p class="option-desc">For freelancers, sole traders, startups, small-to-medium businesses and enterprises.</p>
+            </div>
+
+            <input type="radio" name="account-type" checked>
+        </label>
+
+        
+        <label class="option-card">
+            <div class="icon-area">
+                <img src="./images/Non profit.svg" alt="icon">
+            </div>
+
+            <div class="text-area">
+                <span class="option-title">Other entities</span>
+                <p class="option-desc">For charities, non-profits & religious institutions.</p>
+            </div>
+
+            <input type="radio" name="account-type">
+        </label>
+
+        <a href="./register.html" class="main-btn">Let's get started</a>
+
+        <p class="login-text">Already have an account? <a href="login.html">Login here</a></p>
+
+    </div>
+
+</body>
+</html>

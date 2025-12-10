@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UI</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="top-section">
+    <div class="top-row">
+
+        <div class="brand">
+            <img src="./images/flutterw.png" alt="Logo">
+            <span>Flutterwave</span>
+        </div>
+
+        <div class="progress-bar"></div>
+
+    </div>
+</div>
+
+<div class="container">
+
+    <h1 class="title">Let's get to know you</h1>
+
+    <div class="form-group">
+        <label>Registered business name</label>
+        <input type="text" placeholder="Nosa Inc.">
+        <small>Ensure this name matches the name on your registration certificate.</small>
+    </div>
+
+    <div class="row">
+        <div class="form-group half">
+            <label>First name</label>
+            <input type="text" placeholder="John">
+        </div>
+
+        <div class="form-group half">
+            <label>Last name</label>
+            <input type="text" placeholder="Doe">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Enter a valid email address</label>
+        <div class="email-row">
+            <input type="email" placeholder="name@email.com">
+           <a href="" class="verify-btn">VERIFY</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+  <div class="container">
+
+   
+    <div class="field-group">
+      <label class="label">
+        Is your business incorporated with the Corporate Affairs Commission (CAC)?
+      </label>
+
+      <div class="radio-container">
+
+       
+        <label class="radio-box">
+          <span class="text">Yes</span>
+
+          
+          <input type="radio" name="cac" checked>
+          <span class="circle"></span>
+        </label>
+
+        
+        <label class="radio-box">
+          <span class="text">No</span>
+
+          <input type="radio" name="cac">
+          <span class="circle"></span>
+        </label>
+
+      </div>
+    </div>
+
+ 
+    <div class="field-group">
+      <label class="label">Select business registration type</label>
+      <select>
+        <option>-- select an option --</option>
+      </select>
+    </div>
+
+    
+    <div class="field-group">
+      <label class="label">Choose a password</label>
+      <div class="password-wrapper">
+        <input type="password">
+        <span class="eye">👁</span>
+      </div>
+    </div>
+
+   
+    <label class="checkbox">
+      <input type="checkbox">
+      <span></span>
+      I acknowledge that I have read, understood, and agree to be bound by Flutterwave's 
+      <a href="#" class="west">Merchant Services Agreement (MSA)</a>,
+      <a href="#" class="west">Terms and Conditions</a> and
+      <a href="#" class="west">Privacy Notice</a>.
+    </label>
+
+   
+    <label class="checkbox">
+      <input type="checkbox">
+      <span></span>
+      I agree to receive updates and promotional offers from Flutterwave.
+    </label>
+
+  
+    <button class="btn">Create your account</button>
+
+  </div>
+</body>
+</html>

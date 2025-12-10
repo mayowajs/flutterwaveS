@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flutterwave Login Clone</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7 url('') repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .container {
+  margin-left: 80px;
+  margin-top: 200px;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: -310px;  
+}
+
+.logo img {
+  width: 50px;
+  
+}
+
+.login-box {
+  background: #ffffff;
+  width: 350px;
+  padding: 40px 30px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+button {
+  width: 100%;
+  background: #ff9f00;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login {
+  width: 100%;
+  background: #ff9f00;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forgot {
+  margin-top: 12px;
+  display: block;
+  font-size: 14px;
+  color: #5e72e4;
+  text-decoration: none;
+}
+
+.create-account {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #ff9f00;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* Responsive additions */
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-top: 0;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .login-box {
+    width: 90%;
+    max-width: 350px;
+    padding: 30px 20px;
+  }
+  
+  .create-account {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 80px;
+  }
+  
+  .login-box {
+    width: 95%;
+    padding: 25px 15px;
+  }
+  
+  .create-account {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .login {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+  </style>
+</head>
+<body><a class="create-account" href="#">Create account</a>
+
+  <div class="container">
+    <div class="logo">
+      <img src="./images/flutterwaves.png" alt="Flutterwave Logo">
+    </div>
+    <div class="login-box">
+  <h2>Login</h2>
+
+  <input type="email" placeholder="Email address" />
+
+  <div class="password-wrapper">
+    <input type="password" placeholder="Password" />
+    <span>👁</span>
+  </div>
+
+ <a href="" class="login">Log in</a>
+
+  <a href="#" class="forgot">Forgot password?</a>
+</div>
+
+  </div></body>
+</html>
