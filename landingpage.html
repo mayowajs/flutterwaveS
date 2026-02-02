@@ -9,132 +9,248 @@
 <body>
 
 <header>
-
-  <div class="page-container">
-
-        <div class="top-bar">
-            Please be aware that Flutterwave will never ask for your card details, PIN, OTP/token codes, or any account-related information via call, SMS, WhatsApp or email.
-        </div>
-
-  <div class="logo-box">
-    <img src="./images/flutterw.png" class="flute-img" alt="Flutterwave logo">
-    <div class="logo">flutterwave</div>
+  <div class="top-bar">
+      Please be aware that Flutterwave will never ask for your card details, PIN, OTP/token codes, or any account-related information via call, SMS, WhatsApp or email.
   </div>
 
-  <nav>
-    <ul>
-
-      <li>
-        <input type="checkbox" id="enterprise-toggle" class="toggle">
-        <label for="enterprise-toggle" class="nav-label">Enterprise</label>
-
-        <div class="popup">
-          <div class="popup-header">
-            <label for="enterprise-toggle" class="close-popup">✕</label>
-          </div>
-
-          <div class="brain">
-            <p class="go-p">payment solutions</p>
-          </div>
-
-          <div class="popup-body">
-            <div class="popup-item"><div class="popup-logo"></div>Option 1</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 2</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 1</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 2</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 1</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 2</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 1</div>
-            <div class="popup-item"><div class="popup-logo"></div>Option 2</div>
-          </div>
+  <!-- New Navbar Section -->
+  <nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo Box from original HTML -->
+        <div class="logo-box">
+            <img src="./images/flutterw.png" class="flute-img" alt="Flutterwave logo">
+            <div class="logo">flutterwave</div>
         </div>
-      </li>
-
-      <li>
-        <input type="checkbox" id="sme-toggle" class="toggle">
-        <label for="sme-toggle" class="nav-label">SME</label>
-
-        <div class="popup">
-          <div class="popup-header">
-            <label for="sme-toggle" class="close-popup">✕</label>
-          </div>
-
-          <div class="popup-body">
-            <div class="popup-item"><div class="popup-logo"></div>SME Tool 1</div>
-            <div class="popup-item"><div class="popup-logo"></div>SME Tool 2</div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <input type="checkbox" id="personal-toggle" class="toggle">
-        <label for="personal-toggle" class="nav-label">Personal</label>
-
-        <div class="popup">
-          <div class="popup-header">
-            <label for="personal-toggle" class="close-popup">✕</label>
-          </div>
-
-          <div class="popup-body">
-            <div class="popup-item"><div class="popup-logo"></div>Personal Pay 1</div>
-            <div class="popup-item"><div class="popup-logo"></div>Personal Pay 2</div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <input type="checkbox" id="resources-toggle" class="toggle">
-        <label for="resources-toggle" class="nav-label">Resources</label>
-
-        <div class="popup">
-          <div class="popup-header">
-            <label for="resources-toggle" class="close-popup">✕</label>
-          </div>
-
-          <div class="popup-body">
-            <div class="popup-item"><div class="popup-logo"></div>Blog</div>
-            <div class="popup-item"><div class="popup-logo"></div>Docs</div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <input type="checkbox" id="developers-toggle" class="toggle">
-        <label for="developers-toggle" class="nav-label">Developers</label>
-
-        <div class="popup">
-          <div class="popup-header">
-            <label for="developers-toggle" class="close-popup">✕</label>
-          </div>
-
-          <div class="popup-body">
-            <div class="popup-item"><div class="popup-logo"></div>API Reference</div>
-            <div class="popup-item"><div class="popup-logo"></div>Libraries</div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <input type="checkbox" id="company-toggle" class="toggle">
-        <label for="company-toggle" class="nav-label">Company</label>
-
-        <div class="popup">
-          <div class="popup-header">
-            <label for="company-toggle" class="close-popup">✕</label>
-          </div>
-
-          <div class="popup-body">
-            <div class="popup-item"><div class="popup-logo"></div>About</div>
-            <div class="popup-item"><div class="popup-logo"></div>Careers</div>
-          </div>
-        </div>
-      </li>
-
-    </ul>
+        
+        <!-- Mobile menu toggle checkbox - HIDDEN -->
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-toggle">
+        <label for="mobile-menu-toggle" class="mobile-toggle-label">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        
+        <ul class="nav-menu">
+            <!-- Enterprise Menu Item -->
+            <li class="nav-item enterprise-item">
+                <!-- Mobile popup toggle for this item - HIDDEN -->
+                <input type="checkbox" id="popup-toggle-1" class="mobile-popup-toggle">
+                <label for="popup-toggle-1" class="mobile-popup-label">
+                    <i class="fas fa-chevron-down"></i>
+                </label>
+                
+                <a href="#" class="nav-link">Enterprise</a>
+                <div class="nav-popup">
+                    <div class="popup-header">
+                        <h3>Sell to anyone anywhere</h3>
+                        <p>Grow your business</p>
+                    </div>
+                    <div class="popup-content">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-icon">A</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">Online checkout</div>
+                                    <div class="feature-description">
+                                        Add our checkout to your Shopify, WordPress, WooCommerce, Joomla and PrestaShop stores.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="feature-item">
+                                <div class="feature-icon">B</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">Payment Links</div>
+                                    <div class="feature-description">
+                                        Accept payments without writing code.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="feature-item">
+                                <div class="feature-icon">C</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">POS systems</div>
+                                    <div class="feature-description">
+                                        Point of Sale devices with multiple payment methods to grow your physical business.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="feature-item">
+                                <div class="feature-icon">D</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">Build your online store</div>
+                                    <div class="feature-description">
+                                        Custom enterprise e-commerce solutions with advanced features and integrations.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            
+            <!-- SME Menu Item -->
+            <li class="nav-item sme-item">
+                <!-- Mobile popup toggle for this item - HIDDEN -->
+                <input type="checkbox" id="popup-toggle-2" class="mobile-popup-toggle">
+                <label for="popup-toggle-2" class="mobile-popup-label">
+                    <i class="fas fa-chevron-down"></i>
+                </label>
+                
+                <a href="#" class="nav-link">SME</a>
+                <div class="nav-popup">
+                    <div class="popup-header">
+                        <h3>Sell to anyone anywhere</h3>
+                        <p>Grow your business</p>
+                    </div>
+                    <div class="popup-content">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-icon">A</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">Online checkout</div>
+                                    <div class="feature-description">
+                                        Add our checkout to your Shopify, WordPress, WooCommerce, Joomla and PrestaShop stores.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="feature-item">
+                                <div class="feature-icon">B</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">Payment Links</div>
+                                    <div class="feature-description">
+                                        Accept payments without writing code.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="feature-item">
+                                <div class="feature-icon">C</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">POS systems</div>
+                                    <div class="feature-description">
+                                        Point of Sale devices with multiple payment methods to grow your physical business.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="feature-item">
+                                <div class="feature-icon">D</div>
+                                <div class="feature-details">
+                                    <div class="feature-title">Build your online store</div>
+                                    <div class="feature-description">
+                                        Easy-to-use tools to create your online store without technical skills.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Personal Menu Item -->
+            <li class="nav-item personal-item">
+                <!-- Mobile popup toggle for this item - HIDDEN -->
+                <input type="checkbox" id="popup-toggle-3" class="mobile-popup-toggle">
+                <label for="popup-toggle-3" class="mobile-popup-label">
+                    <i class="fas fa-chevron-down"></i>
+                </label>
+                
+                <a href="#" class="nav-link">Personal</a>
+                <div class="nav-popup">
+                    <div class="popup-header">
+                        <h3>Personal Solutions</h3>
+                        <p>Tools for individuals and creators</p>
+                    </div>
+                    <div class="popup-content">
+                        <div class="feature-grid">
+                            <div class="grid-item">
+                                <div class="grid-title">Swap</div>
+                                <div class="grid-description">
+                                    Swap your Naira for Dollars, Euros and Pounds at competitive rates.
+                                </div>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <div class="grid-title">Invoices</div>
+                                <div class="grid-description">
+                                    Create and issue professional invoices for global payments with automated reminders.
+                                </div>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <div class="grid-title">Disha for creators</div>
+                                <div class="grid-description">
+                                    Effortlessly create a free single-page website, sell products globally, no coding required.
+                                </div>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <div class="grid-title">Affitickets</div>
+                                <div class="grid-description">
+                                    Experience the integrated offering of event ticketing and management for personal and small events.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Resources Menu Item -->
+            <li class="nav-item resources-item">
+                <!-- Mobile popup toggle for this item - HIDDEN -->
+                <input type="checkbox" id="popup-toggle-4" class="mobile-popup-toggle">
+                <label for="popup-toggle-4" class="mobile-popup-label">
+                    <i class="fas fa-chevron-down"></i>
+                </label>
+                
+                <a href="#" class="nav-link">Resources</a>
+                <div class="nav-popup">
+                    <div class="popup-header">
+                        <h3>Resources & Tools</h3>
+                        <p>Documentation, guides, and support for all users</p>
+                    </div>
+                    <div class="popup-content">
+                        <div class="feature-grid">
+                            <div class="grid-item">
+                                <div class="grid-title">API Documentation</div>
+                                <div class="grid-description">
+                                    Complete API references and integration guides for developers.
+                                </div>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <div class="grid-title">Help Center</div>
+                                <div class="grid-description">
+                                    Detailed tutorials, FAQs, and troubleshooting guides for all products.
+                                </div>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <div class="grid-title">Business Guides</div>
+                                <div class="grid-description">
+                                    Best practices and strategies to grow your business with our tools.
+                                </div>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <div class="grid-title">Community Forum</div>
+                                <div class="grid-description">
+                                    Connect with other users, share experiences, and get community support.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+        <!-- Sign In Button from original HTML -->
+        <button class="button">Sign in</button>
+    </div>
   </nav>
-
-  <button class="button">Sign in</button>
-
 </header>
 
 <section class="hero">
@@ -256,7 +372,7 @@
     </section>
     
     <div class="container">
-        <h1>
+        <h1 class="cont-h1">
             Endless payment <br>
             possibilities for every <br>
             <span class="highlight">Small Business.</span>
@@ -293,7 +409,7 @@
 </div>
 
 <div class="dante">
-   <h4 class="h4">Let’s play to our strengths, shall we?
+   <h4 class="h4">Let's play to our strengths, shall we?
      You focus on bringing your amazing ideas to 
      life and we focus on providing all the <span>commerce 
      tools</span> you need.</h3>
@@ -326,7 +442,7 @@
 
     <div class="ruun">
       <h6 class="real-h6">Find events and Buy tickets</h6>
-      <p>Browse upcoming events and secure your ticket easily on our platform. Don’t miss out—get started <a href="#">here</a>.</p>
+      <p>Browse upcoming events and secure your ticket easily on our platform. Don't miss out—get started <a href="#">here</a>.</p>
     </div>
   </div>
 </div>
